@@ -59,8 +59,7 @@ let scorep=0;
 let scorec=0;
 let playerSelection= playerSelectionc();
 let computerSelection = computerchoice();
-
-
+let click=0;
 
 function playRound() { //takes computer's choice and player's choice and compares both to see which wins
    playerSelection= playerSelectionc();
@@ -106,7 +105,7 @@ function playRound() { //takes computer's choice and player's choice and compare
          if(scorec+scorep==0) 
           {
           resultContainer.innerHTML += "<h3> Time for A New Tournament! </h3>";
-          }
+          click=0;          }
          
          
       }
