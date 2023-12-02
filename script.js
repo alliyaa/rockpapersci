@@ -115,7 +115,7 @@ function playRound() { //takes computer's choice and player's choice and compare
      
     
       let resultContainer = document.getElementById("resultContainer");
-      resultContainer.innerHTML = ""; 
+      resultContainer.textContent = ""; 
       
       click++;
       newt();
@@ -138,9 +138,9 @@ function playRound() { //takes computer's choice and player's choice and compare
 
           
            
-     resultContainer.innerHTML += "<p> You chose : " + playerSelection + "</p>";
+     resultContainer.innerHTML+= "<p> You chose : " + playerSelection + "</p>";
      resultContainer.innerHTML += "<p> Computer chose : " + computerSelection+ "</p>";
-     resultContainer.innerHTML+= "<p> Computer : " +scorec +  " You : " +scorep +"</p>";
+     resultContainer.innerHTML+= "<h3> Computer : " +scorec +  " You : " +scorep +"</h3>";
     
   
     
@@ -161,22 +161,15 @@ function playRound() { //takes computer's choice and player's choice and compare
         resultContainer.innerHTML+= " <p> Final score for You : " +scorep+ "</p>";
         if(scorep>scorec)
         {
-          resultContainer.innerHTML+= "<p> You win the tournament! </p>";
+          resultContainer.innerHTML+= "<h2> You win the tournament! </h2>";
         }
         else
         {
-          resultContainer.innerHTML+= "<p> Computer wins the tournament! </p>";
+          resultContainer.innerHTML+= "<h2> Computer wins the tournament! </h2>";
 
         }
-       
-
-     
-
-       
-     }
-    
-     
-     
+             
+     }   
   let playButton = document.getElementById("playButton");
   playButton.addEventListener("click", game);
 
